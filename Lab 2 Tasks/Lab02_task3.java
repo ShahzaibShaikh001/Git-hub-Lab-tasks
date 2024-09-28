@@ -15,7 +15,7 @@ public class Lab02_task3 {
         int maxWords = 0; 
 
         
-        for (String sentence : sentences) { // advanced loop Sir ghafoor ney nhi parhaya humen ab tak
+        for (String sentence : sentences) { 
             
             String[] words = sentence.split(" "); //creating an array to split words from scentences and store
 

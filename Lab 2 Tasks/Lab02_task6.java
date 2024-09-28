@@ -11,18 +11,14 @@ package com.mycompany.lab2task2;
 public class Lab02_task6 {
     public int countPrimes(int n) {
         if (n <= 2) {
-            return 0; // There are no prime numbers less than 2
-        }
-        
+            return 0; 
+        }     
         boolean[] isPrime = new boolean[n];
         for (int i = 2; i < n; i++) {
-            isPrime[i] = true; // Initially assume all numbers >= 2 are prime
+            isPrime[i] = true; 
         }
-        
-        // Implement the Sieve of Eratosthenes
         for (int p = 2; p * p < n; p++) {
             if (isPrime[p]) {
-                // Mark multiples of p as non-prime
                 for (int multiple = p * p; multiple < n; multiple += p) {
                     isPrime[multiple] = false;
                 }

@@ -9,19 +9,12 @@ package com.mycompany.lab2task2;
  * @author Amir Shaikh
  */
 public class Lab02_Task2 {
-   
-
-    
     public static int[] findWordIndices(String[] words, char x) {
         
-        int[] indices = new int[words.length]; // index store krn ka variable
+        int[] indices = new int[words.length]; 
         int count = 0;  
-
-        
-        for (int i = 0; i < words.length; i++) { // i itterates through entire array length 
-            String word = words[i]; //varriable mein array ki [i] index store krva rhey
-
-            
+        for (int i = 0; i < words.length; i++) { 
+            String word = words[i]; 
             for (int j = 0; j < word.length(); j++) {
                 if (word.charAt(j) == x) {
                     indices[count] = i;  
@@ -30,13 +23,10 @@ public class Lab02_Task2 {
                 }
             }
         }
-
-        
         int[] result = new int[count];
         for (int i = 0; i < count; i++) {
             result[i] = indices[i];  
         }
-
         return result;  
     }
 

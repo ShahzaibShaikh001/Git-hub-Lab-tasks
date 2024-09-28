@@ -9,7 +9,7 @@ package com.mycompany.arrays;
  * @author N TECH
  */
 public class Arrays {
-//EXCERCISE 1(1ST) and (2ND)
+
     public static void main(String[] args) {
         int[]nums={5,15,25,35,45,55};
         for(int i=0; i<nums.length; i++){

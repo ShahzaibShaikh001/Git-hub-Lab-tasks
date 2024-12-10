@@ -6,7 +6,7 @@ package oop.binarytree;
 
 /**
  *
- * @author AYESHA
+ * @author Shahzaib
  */
 public class BinaryTree {
 
